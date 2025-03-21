@@ -15,9 +15,9 @@ if(WIN32)
 else()
     set(USERHOME $ENV{HOME})
 endif()
-set(sdkVersion 2.1.0)
+set(sdkVersion 1.5.1)
 set(toolchainVersion 13_3_Rel1)
-set(picotoolVersion 2.1.0)
+set(picotoolVersion 2.0.0)
 set(picoVscode ${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
 if (EXISTS ${picoVscode})
     include(${picoVscode})
@@ -35,7 +35,11 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
+<<<<<<< HEAD
 add_executable(Trabalho_EmbarcaTech Trabalho_EmbarcaTech.c )
+=======
+add_executable(Trabalho_EmbarcaTech Trabalho_EmbarcaTech.c inc/ssd1306_i2c.c)
+>>>>>>> 1000fa0 (Atualização do para fase de nivelamento)
 
 pico_set_program_name(Trabalho_EmbarcaTech "Trabalho_EmbarcaTech")
 pico_set_program_version(Trabalho_EmbarcaTech "0.1")
@@ -50,13 +54,26 @@ target_link_libraries(Trabalho_EmbarcaTech
 
 # Add the standard include files to the build
 target_include_directories(Trabalho_EmbarcaTech PRIVATE
+<<<<<<< HEAD
         ${CMAKE_CURRENT_LIST_DIR}
+=======
+  ${CMAKE_CURRENT_LIST_DIR}
+>>>>>>> 1000fa0 (Atualização do para fase de nivelamento)
 )
 
 # Add any user requested libraries
 target_link_libraries(Trabalho_EmbarcaTech 
+<<<<<<< HEAD
         
         )
 
 pico_add_extra_outputs(Trabalho_EmbarcaTech)
 
+=======
+        hardware_pwm
+        hardware_clocks
+        hardware_i2c
+        )
+
+pico_add_extra_outputs(Trabalho_EmbarcaTech)
+>>>>>>> 1000fa0 (Atualização do para fase de nivelamento)
