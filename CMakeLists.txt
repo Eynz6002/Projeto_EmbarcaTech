@@ -34,16 +34,7 @@ project(Trabalho_EmbarcaTech C CXX ASM)
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
-
-<<<<<<< HEAD
 add_executable(Trabalho_EmbarcaTech Trabalho_EmbarcaTech.c inc/ssd1306_i2c.c)
-=======
-<<<<<<< HEAD
-add_executable(Trabalho_EmbarcaTech Trabalho_EmbarcaTech.c )
-=======
-add_executable(Trabalho_EmbarcaTech Trabalho_EmbarcaTech.c inc/ssd1306_i2c.c)
->>>>>>> 1000fa0 (Atualização do para fase de nivelamento)
->>>>>>> 708134d669d8165a8b70a85f06ee337ee9311309
 
 pico_set_program_name(Trabalho_EmbarcaTech "Trabalho_EmbarcaTech")
 pico_set_program_version(Trabalho_EmbarcaTech "0.1")
@@ -58,36 +49,14 @@ target_link_libraries(Trabalho_EmbarcaTech
 
 # Add the standard include files to the build
 target_include_directories(Trabalho_EmbarcaTech PRIVATE
-<<<<<<< HEAD
   ${CMAKE_CURRENT_LIST_DIR}
-=======
-<<<<<<< HEAD
-        ${CMAKE_CURRENT_LIST_DIR}
-=======
-  ${CMAKE_CURRENT_LIST_DIR}
->>>>>>> 1000fa0 (Atualização do para fase de nivelamento)
->>>>>>> 708134d669d8165a8b70a85f06ee337ee9311309
 )
 
 # Add any user requested libraries
 target_link_libraries(Trabalho_EmbarcaTech 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        
-        )
-
-pico_add_extra_outputs(Trabalho_EmbarcaTech)
-
-=======
->>>>>>> 708134d669d8165a8b70a85f06ee337ee9311309
         hardware_pwm
         hardware_clocks
         hardware_i2c
         )
 
 pico_add_extra_outputs(Trabalho_EmbarcaTech)
-<<<<<<< HEAD
-=======
->>>>>>> 1000fa0 (Atualização do para fase de nivelamento)
->>>>>>> 708134d669d8165a8b70a85f06ee337ee9311309
