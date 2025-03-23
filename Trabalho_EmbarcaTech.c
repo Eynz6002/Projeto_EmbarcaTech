@@ -13,7 +13,7 @@
 #define tam_array 13 //Tamanho do array
 #define beep_freq 10 // Frequencia do beep
 
-//Pinos dos perifericos
+//Pinos
 #define button_A 5
 #define button_B 6
 #define buzzer_pin 21 
