@@ -112,6 +112,7 @@ void mensagem_display() {
     
     // Atualiza a tela com os resultados
     show_on_display();
+    sleep_ms(4000);
 }
 
 int main() {
