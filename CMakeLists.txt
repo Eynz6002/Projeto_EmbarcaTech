@@ -40,6 +40,8 @@ add_executable(Projeto_EmbarcaTech Projeto_EmbarcaTech.c
     source/display.c
     source/buttons_leds.c
     source/buzzer_pwm.c
+    libs/max30100/max30100.c
+    libs/algorithm/algorithm.c
     )
 
 pico_set_program_name(Projeto_EmbarcaTech "Projeto_EmbarcaTech")
